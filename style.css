@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    justify-content: center
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+#sketch {
+    display: flex;
+    width: 640px;
+    height: 640px;
+    background-color: grey;
+    box-sizing: border-box;
+}
+
+.column {
+    flex: 1; /* <--- required (style column to fill the same space as the other columns) */
+    border: 1px solid black;
+    box-sizing: border-box;
+
+}
+
+.row {
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+    box-sizing: border-box;
+}
+
