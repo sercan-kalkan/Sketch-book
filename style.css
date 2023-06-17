@@ -7,6 +7,7 @@
 .sidebar {
     display: flex;
     flex-direction: column;
+    margin-right: 100px;
 }
 
 #sketch {
@@ -20,6 +21,7 @@
 .column {
     flex: 1; /* <--- required (style column to fill the same space as the other columns) */
     border: 1px solid black;
+    margin: 0%;
     box-sizing: border-box;
 
 }
@@ -28,6 +30,7 @@
     text-align: center;
     border: 1px solid black;
     background-color: white;
+    margin: 0%;
     box-sizing: border-box;
 }
 

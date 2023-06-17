@@ -13,9 +13,9 @@ const button = document.getElementById('create');
 button.addEventListener('click',askSquareNumber);
 button.addEventListener('click',createSketch);
 
-let columns =16;
-let rows =columns;
-const height = `${(640/rows)}px`//define height of square divs
+let columns;
+let rows;
+
 
 function askSquareNumber() {
     columns = Number(prompt("How many squares do you want?"));
@@ -26,15 +26,17 @@ function askSquareNumber() {
 const freeSpace = document.getElementById('sketch');
 freeSpace.innerHTML=""
 sketch.inner
-createSketch(columns);
+createSketch(columns, rows);
 }
 
-function createSketch (columns) {
+
+function createSketch (columns, rows) {
+    const height = `${(640/columns)}px`//define height of square divs
     for (let i = 0; i < columns; ++i) {
         let column = document.createElement('div'); // create column
         column.classList.add('column');
         column.style.setProperty("height", height)
-      
+        rows = columns;
         for (let j = 0; j < rows; ++j) {
             let row = document.createElement('div'); // create row
             row.classList.add('row');
