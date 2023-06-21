@@ -5,11 +5,23 @@ body {
 h1 {
     color: white;
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .container{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#create {
+    width: 150px;
 }
 
 .sidebar {
@@ -25,6 +37,7 @@ h1 {
     height: 640px;
     background-color: black;
     box-sizing: border-box;
+    margin-top: 30px;
 }
 
 .column {

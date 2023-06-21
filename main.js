@@ -1,4 +1,4 @@
- 
+
 const button = document.getElementById('create');
 button.addEventListener('click',askSquareNumber);
 
@@ -26,7 +26,7 @@ for (let i = 0; i < 16; ++i) {
 
 
 
-//asking the user square numbers
+//asking the user square numbers and run the function which creates new sketch area
 function askSquareNumber() {
     columns = Number(prompt("How many squares do you want?"));
     console.log(typeof(columns));
